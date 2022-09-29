@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: lightgreen;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  color: black;
+  text-align: center;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+}
+
+div.gallery {
+  border: 1px solid #fff;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1>Eu Multimídia</h1>
+<p>Laboratório 1 - Introdução HTML5</p>
+<h2>
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="Artur.jpg">
+  <img src="Artur.jpg" alt="Eu" width="device-width" height="400">
+  </a>
+  <div class="desc">Artur Lazarini Silva - Estudante de Engenharia de Informação</div>
+  </div>
+</div>
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="Video">
+  <iframe width="800" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+  </iframe>
+  </a>
+  <div class="desc">Muppets para relaxar</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</h2>
+<p> Está página exemplifica a utilziação de HTML como instrumento multimídia, de acordo com o requisitado no PDF da aula</p>
+
+<div class="responsive">
+<p><object data="Lab1_HTML5_EuMultimidia_x.pdf" width="800" height="400" " ></object></p>
+</div>
+
+</body>
+</html>
+
+
+
